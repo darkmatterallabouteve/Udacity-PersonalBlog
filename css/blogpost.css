@@ -6,18 +6,7 @@
 
 body {
     background-color: rgb(131, 170, 255);
-}
-
-article p {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight:200;
-    margin: 0.8;
-    text-indent: 3ch;
-}
-
-article em {
-    color: red;
-    font-weight: bold;
+    padding: 2em; 
 }
 
 .roundedbox{
@@ -35,8 +24,22 @@ article em {
 }
 
 .authorwrapperbox > * { 
-    padding: 10px;
+    padding: 5px;
     flex: 1 100%;
+}
+
+@media all and (min-width: 600px) {
+    .sidebar { 
+        flex: 1 0 0; 
+    }
+}
+
+@media all and (min-width: 800px) {
+    .shortbio        { flex: 3 0px; }
+    .avatar          { order: 1; } 
+    .shortbio        { order: 2; }
+    .misc            { order: 3; }
+    .currentcompany  { order: 4; }
 }
 
 .authorinfo {
@@ -55,35 +58,19 @@ article em {
 .avatar {
     background: rgb(255, 255, 255);
 }
+
 .authorwrapperbox > .avatar img {
     max-width: 100%;    
 }
+
 .misc {
     background: rgb(89, 0, 255);
-}
-
-@media all and (min-width: 600px) {
-    .aside { 
-        flex: 1 0 0; 
-    }
-}
-
-@media all and (min-width: 800px) {
-    .shortbio        { flex: 3 0px; }
-    .avatar          { order: 1; } 
-    .shortbio        { order: 2; }
-    .misc            { order: 3; }
-    .currentcompany  { order: 4; }
-}
-
-body {
-    padding: 2em; 
 }
 
 .socialmedia {
     display: flex;
 }
-  
+
 .socialmediaitem {
     width: 100px;  
     background: rgb(0, 0, 0); 
@@ -91,7 +78,7 @@ body {
     margin: auto; 
  }
 
- .socialmediaitem a:hover {
+.socialmediaitem a:hover {
     background: #daff09;
 }
 
@@ -103,7 +90,7 @@ figure {
     font-style: italic;
     font-size: smaller;
     text-indent: 0;
-    border: thin rgb(148, 148, 148) solid;
+    border: thick double #32a1ce;
     background: #ffffff;
     margin: 0.5em;
     padding: 0.5em;
@@ -115,4 +102,16 @@ img.scaled {
 
 figcaption {
     padding: 0.5em;
+}
+
+article p {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight:200;
+    margin: 0.8;
+    text-indent: 3ch;
+}
+
+article em {
+    color: red;
+    font-weight: bold;
 }
