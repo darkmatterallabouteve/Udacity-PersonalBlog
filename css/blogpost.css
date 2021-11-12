@@ -9,7 +9,10 @@ body {
 }
 
 article p {
-    font-family:cursive;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight:200;
+    margin: 0.8;
+    text-indent: 3ch;
 }
 
 article em {
@@ -24,14 +27,14 @@ article em {
     padding: 20px;
 }
   
-.wrapper {
+.authorwrapperbox {
     display: flex;  
     flex-flow: row wrap;
     font-weight: bold;
     text-align: center; 
 }
 
-.wrapper > * { 
+.authorwrapperbox > * { 
     padding: 10px;
     flex: 1 100%;
 }
@@ -52,7 +55,7 @@ article em {
 .avatar {
     background: rgb(255, 255, 255);
 }
-.wrapper > .avatar img {
+.authorwrapperbox > .avatar img {
     max-width: 100%;    
 }
 .misc {
@@ -60,14 +63,16 @@ article em {
 }
 
 @media all and (min-width: 600px) {
-    .aside { flex: 1 0 0; }
+    .aside { 
+        flex: 1 0 0; 
+    }
 }
 
 @media all and (min-width: 800px) {
-    .shortbio    { flex: 3 0px; }
-    .avatar { order: 1; } 
-    .shortbio    { order: 2; }
-    .misc { order: 3; }
+    .shortbio        { flex: 3 0px; }
+    .avatar          { order: 1; } 
+    .shortbio        { order: 2; }
+    .misc            { order: 3; }
     .currentcompany  { order: 4; }
 }
 
@@ -86,6 +91,10 @@ body {
     margin: auto; 
  }
 
+ .socialmediaitem a:hover {
+    background: #daff09;
+}
+
 figure {
     border-top: none;
     float: left;
@@ -94,7 +103,7 @@ figure {
     font-style: italic;
     font-size: smaller;
     text-indent: 0;
-    border: thin silver solid;
+    border: thin rgb(148, 148, 148) solid;
     background: #ffffff;
     margin: 0.5em;
     padding: 0.5em;

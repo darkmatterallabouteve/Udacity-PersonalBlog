@@ -1,41 +1,24 @@
 .container {
     display:grid;
-    grid-template-columns: 100px 100px 100px;
-    grid-template-rows: 100px 100px;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 250px 170px;
     grid-gap: 6px;
     grid-template-areas: 
     "nav nav nav nav nav nav nav nav"
     "hd hd hd hd hd hd hd hd"
     "main main main main main main main main"
     "ft ft ft ft ft ft ft ft";
-}
 
+}
 body {
     background-color: rgb(131, 170, 255);
 }
 
-@media (min-width: 900px) {
+@media (min-width: 600px) and (max-width:900px) {
     .container {
         display:grid;
         grid-template-columns: 100px 100px 100px;
         grid-template-rows: 100px 100px;
-        grid-gap: 6px;
-        grid-template-areas: 
-        "nav nav nav nav nav nav nav nav"
-        "hd hd hd hd hd hd hd hd"
-        "main main main main main main main main"
-        "ft ft ft ft ft ft ft ft";
-    }
-    body {
-        background-color: rgb(9, 105, 168);
-      }
-}
-
-  @media screen and (max-width: 600px) {
-    .container {
-        display:grid;
-        grid-template-columns: 100px 100px 100px;
-        grid-template-rows: 200px 200px;
         grid-gap: 6px;
         grid-template-areas: 
         "nav nav nav nav nav nav nav nav"
@@ -47,6 +30,38 @@ body {
       background-color: rgb(19, 45, 117);
     }
   }
+
+@media (min-width:901px) {
+    .container {
+      display:grid;
+      grid-template-columns: 100px 100px 100px;
+      grid-template-rows: 100px 100px;
+      grid-gap: 6px;
+      grid-template-areas: 
+      "nav nav nav nav nav nav nav nav"
+      "hd hd hd hd hd hd hd hd"
+      "main main main main main main main main"
+      "ft ft ft ft ft ft ft ft";
+  }
+  body {
+      background-color: rgb(9, 105, 168);
+    }
+}
+.header {
+  grid-area:hd;
+}
+.navbar {
+  grid-area:nav;
+}
+.footer {
+  grid-area: ft;  
+}
+.feature {
+  grid-area: feat;
+}
+.content {
+  grid-area: main;
+}
 
 .postgrid { 
     display: grid;
@@ -70,7 +85,7 @@ body {
 }
 
 .text > button {
-    background: gray;
+    background: rgb(54, 54, 54);
     border: 0;
     color: white;
     padding: 10px;
@@ -80,7 +95,8 @@ body {
 }
 
 .text > button:hover {
-    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  background: rgb(100, 91, 91);
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .roundedbox{
@@ -88,24 +104,4 @@ body {
     background: #5005b1;
     border: 1px solid black;
     padding: 20px;
-}
-  
-.header {
-  grid-area:hd;
-}
-
-.navbar {
-    grid-area:nav;
-}
-
-.footer {
-  grid-area: ft;  
-}
-
-.feature {
-  grid-area: feat;
-}
-
-.content {
-  grid-area: main;
 }
