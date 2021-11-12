@@ -1,3 +1,7 @@
+/*
+Examples taken from following to create grid
+https://css-tricks.com/snippets/css/complete-guide-grid/
+*/
 .container {
     display:grid;
     grid-template-columns: 100px 100px;
