@@ -71,6 +71,10 @@ body {
     grid-area: main;
 }
 
+/*
+Examples taken from following to create grid
+https://www.quackit.com/html/html_editors/scratchpad/?example=/css/grid/examples/cards_auto-fill_align-items_start
+*/
 .postgrid { 
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
