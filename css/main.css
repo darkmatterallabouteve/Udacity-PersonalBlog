@@ -50,15 +50,19 @@ body {
 .header {
   grid-area:hd;
 }
+
 .navbar {
   grid-area:nav;
 }
+
 .footer {
   grid-area: ft;  
 }
+
 .feature {
   grid-area: feat;
 }
+
 .content {
   grid-area: main;
 }
@@ -67,7 +71,6 @@ body {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 20px;
-    align-items: stretch;
 }
 
 .postgrid > article {
