@@ -48,23 +48,23 @@ body {
     }
 }
 .header {
-  grid-area:hd;
+    grid-area:hd;
 }
 
 .navbar {
-  grid-area:nav;
+    grid-area:nav;
 }
 
 .footer {
-  grid-area: ft;  
+    grid-area: ft;  
 }
 
 .feature {
-  grid-area: feat;
+    grid-area: feat;
 }
 
 .content {
-  grid-area: main;
+    grid-area: main;
 }
 
 .postgrid { 
@@ -98,8 +98,8 @@ body {
 }
 
 .text > button:hover {
-  background: rgb(100, 91, 91);
-  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    background: rgb(100, 91, 91);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
 .roundedbox{
