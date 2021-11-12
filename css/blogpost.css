@@ -1,0 +1,109 @@
+.container {
+    display:grid;
+    grid-gap: 6px;
+    justify-content: space-evenly;
+}
+
+body {
+    background-color: rgb(131, 170, 255);
+}
+
+article p {
+    font-family:cursive;
+}
+
+article em {
+    color: red;
+    font-weight: bold;
+}
+
+.roundedbox{
+    border-radius: 5px;
+    background: #681fc9;
+    border: 1px solid black;
+    padding: 20px;
+}
+  
+.wrapper {
+    display: flex;  
+    flex-flow: row wrap;
+    font-weight: bold;
+    text-align: center; 
+}
+
+.wrapper > * { 
+    padding: 10px;
+    flex: 1 100%;
+}
+
+.authorinfo {
+    background: rgb(0, 60, 255);
+}
+
+.currentcompany {
+    background: rgb(82, 82, 82);
+}
+
+.shortbio {
+    text-align: left;
+    background: rgb(1, 189, 252);
+}
+
+.avatar {
+    background: rgb(255, 255, 255);
+}
+.wrapper > .avatar img {
+    max-width: 100%;    
+}
+.misc {
+    background: rgb(89, 0, 255);
+}
+
+@media all and (min-width: 600px) {
+    .aside { flex: 1 0 0; }
+}
+
+@media all and (min-width: 800px) {
+    .shortbio    { flex: 3 0px; }
+    .avatar { order: 1; } 
+    .shortbio    { order: 2; }
+    .misc { order: 3; }
+    .currentcompany  { order: 4; }
+}
+
+body {
+    padding: 2em; 
+}
+
+.socialmedia {
+    display: flex;
+}
+  
+.socialmediaitem {
+    width: 100px;  
+    background: rgb(0, 0, 0); 
+    text-align: center;
+    margin: auto; 
+ }
+
+figure {
+    border-top: none;
+    float: left;
+    width: 30%;
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    text-indent: 0;
+    border: thin silver solid;
+    background: #ffffff;
+    margin: 0.5em;
+    padding: 0.5em;
+}
+
+img.scaled {
+    width: 100%;
+}
+
+figcaption {
+    padding: 0.5em;
+}

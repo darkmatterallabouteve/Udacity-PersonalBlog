@@ -1,0 +1,111 @@
+.container {
+    display:grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px;
+    grid-gap: 6px;
+    grid-template-areas: 
+    "nav nav nav nav nav nav nav nav"
+    "hd hd hd hd hd hd hd hd"
+    "main main main main main main main main"
+    "ft ft ft ft ft ft ft ft";
+}
+
+body {
+    background-color: rgb(131, 170, 255);
+}
+
+@media (min-width: 900px) {
+    .container {
+        display:grid;
+        grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 100px 100px;
+        grid-gap: 6px;
+        grid-template-areas: 
+        "nav nav nav nav nav nav nav nav"
+        "hd hd hd hd hd hd hd hd"
+        "main main main main main main main main"
+        "ft ft ft ft ft ft ft ft";
+    }
+    body {
+        background-color: rgb(9, 105, 168);
+      }
+}
+
+  @media screen and (max-width: 600px) {
+    .container {
+        display:grid;
+        grid-template-columns: 100px 100px 100px;
+        grid-template-rows: 200px 200px;
+        grid-gap: 6px;
+        grid-template-areas: 
+        "nav nav nav nav nav nav nav nav"
+        "hd hd hd hd hd hd hd hd"
+        "main main main main main main main main"
+        "ft ft ft ft ft ft ft ft";
+    }   
+    body {
+      background-color: rgb(19, 45, 117);
+    }
+  }
+
+.postgrid { 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    align-items: stretch;
+}
+
+.postgrid > article {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    background-color: #f1f1f1;
+}
+
+.postgrid > article img {
+    max-width: 100%;    
+}
+
+.text {
+    padding: 0 20px 20px;
+}
+
+.text > button {
+    background: gray;
+    border: 0;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.text > button:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.roundedbox{
+    border-radius: 5px;
+    background: #5005b1;
+    border: 1px solid black;
+    padding: 20px;
+}
+  
+.header {
+  grid-area:hd;
+}
+
+.navbar {
+    grid-area:nav;
+}
+
+.footer {
+  grid-area: ft;  
+}
+
+.feature {
+  grid-area: feat;
+}
+
+.content {
+  grid-area: main;
+}
