@@ -4,10 +4,10 @@
     grid-template-rows: 250px 170px;
     grid-gap: 6px;
     grid-template-areas: 
-    "nav nav nav nav nav nav nav nav"
-    "hd hd hd hd hd hd hd hd"
-    "main main main main main main main main"
-    "ft ft ft ft ft ft ft ft";
+    "nav nav nav nav"
+    "hd hd hd hd"
+    "main main main main"
+    "ft ft ft ft";
 
 }
 body {
@@ -17,14 +17,14 @@ body {
 @media (min-width: 600px) and (max-width:900px) {
     .container {
         display:grid;
-        grid-template-columns: 100px 100px 100px;
+        grid-template-columns: 100px 100px;
         grid-template-rows: 100px 100px;
         grid-gap: 6px;
         grid-template-areas: 
-        "nav nav nav nav nav nav nav nav"
-        "hd hd hd hd hd hd hd hd"
-        "main main main main main main main main"
-        "ft ft ft ft ft ft ft ft";
+        "nav nav nav nav"
+        "hd hd hd hd"
+        "main main main main"
+        "ft ft ft ft";
     }   
     body {
       background-color: rgb(19, 45, 117);
@@ -34,14 +34,14 @@ body {
 @media (min-width:901px) {
     .container {
       display:grid;
-      grid-template-columns: 100px 100px 100px;
+      grid-template-columns: 100px 100px;
       grid-template-rows: 100px 100px;
       grid-gap: 6px;
       grid-template-areas: 
-      "nav nav nav nav nav nav nav nav"
-      "hd hd hd hd hd hd hd hd"
-      "main main main main main main main main"
-      "ft ft ft ft ft ft ft ft";
+      "nav nav nav nav"
+      "hd hd hd hd"
+      "main main main main"
+      "ft ft ft ft";
   }
   body {
       background-color: rgb(9, 105, 168);

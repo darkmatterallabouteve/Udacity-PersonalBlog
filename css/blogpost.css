@@ -16,6 +16,11 @@ body {
     padding: 20px;
 }
 
+/*
+Following created following along the logic of 
+example of this flexbox comes from online guide.
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/#examples
+*/
 .authorwrapperbox {
     display: flex;  
     flex-flow: row wrap;
@@ -82,6 +87,11 @@ body {
     background: #daff09;
 }
 
+/*
+Following created following the logic of 
+examples from online guide.
+https://www.w3.org/Style/Examples/007/figures.en.html
+*/
 figure {
     float: left;
     width: 30%;
