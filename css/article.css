@@ -1,0 +1,38 @@
+/*
+Examples taken from following to create grid
+https://www.quackit.com/html/html_editors/scratchpad/?example=/css/grid/examples/cards_auto-fill_align-items_start
+*/
+.postgrid { 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+
+.postgrid > article {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    background-color: #f1f1f1;
+}
+
+.postgrid > article img {
+    max-width: 100%;    
+}
+
+.text {
+    padding: 0 20px 20px;
+}
+
+.text > button {
+    background: rgb(54, 54, 54);
+    border: 0;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    width: 100%;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.text > button:hover {
+    background: rgb(100, 91, 91);
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
